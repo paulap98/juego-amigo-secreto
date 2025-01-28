@@ -3,7 +3,7 @@ let amigos = [];
 
 function agregarAmigo() {
 
-    let nombreAmigo = document.getElementById('amigo').ariaValueMax;
+    let nombreAmigo = document.getElementById('amigo').value;
 
     console.log(nombreAmigo);
     
