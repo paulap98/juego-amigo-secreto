@@ -33,3 +33,16 @@ function actualizarListaAmigos() {
     }
 }
 
+function nombreAleatorio() {
+
+    if (amigos.length === 0) {
+        alert ("No hay amigos disponibles para sorteo.");
+        return;
+    }
+    
+    let aleatorio = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[aleatorio]; 
+    //alert(`El amigo secreto sorteado es: ${amigoSorteado}`);
+    document.getElementById('resultado').innerHTML = `El amigo secreto sorteado es: <strong>${amigoSorteado}</strong>`;
+}
+
