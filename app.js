@@ -5,6 +5,18 @@ function agregarAmigo() {
 
     let nombreAmigo = document.getElementById('amigo').value;
 
-    console.log(nombreAmigo);
+
+    if (nombreAmigo === "") {
+
+        alert("Por favor, inserte un nombre.");
+        return;
+        
+    }
+
+    amigos.push(nombreAmigo);
+    console.log(amigos);
+    document.getElementById('amigo').value = "";
     
+    actualizarListaAmigos();
 }
+
